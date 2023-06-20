@@ -1,0 +1,8 @@
+[Unit]
+Description=Start btattach for %I
+BindTo=dev-%i.device
+After=dev-%i.device
+
+[Service]
+Type=simple
+ExecStart=btattach -P bcm -B /dev/%I

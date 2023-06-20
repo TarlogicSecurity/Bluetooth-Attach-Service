@@ -1,0 +1,2 @@
+# Cypress CYW920819
+SUBSYSTEM=="tty", ENV{ID_VENDOR_ID}=="04b4", ENV{ID_MODEL_ID}=="009b", ENV{ID_USB_INTERFACE_NUM}=="00", ACTION=="add", TAG+="systemd", ENV{SYSTEMD_WANTS}="btattach@$name.service"
